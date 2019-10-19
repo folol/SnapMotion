@@ -8,4 +8,21 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="Widget.MyTheme.CardView" parent="Widget.MaterialComponents.CardView">
+        <!--
+        cardBackgroundColor: The color of the card background. The default color is colorSurface.
+        cardElevation: The elevation of the card. The default value is 1dp.
+        shapeAppearance: The shape appearance of the card background. The default value is shapeAppearanceMediumComponent.
+        -->
+        <item name="cardElevation">8dp</item>
+    </style>
+
+    <style name="LeftPanelCard" parent="Widget.MyTheme.CardView">
+        <item name="shapeAppearance">@style/ShapeAppearance.MyTheme.MediumComponent.LeftPanelCard</item>
+    </style>
+
+    <style name="RightPanelCard" parent="Widget.MyTheme.CardView">
+        <item name="shapeAppearance">@style/ShapeAppearance.MyTheme.MediumComponent.RightPanelCard</item>
+    </style>
+
 </resources>
