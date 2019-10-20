@@ -31,7 +31,372 @@
 
         </Constraint>
 
+        <Constraint android:id="@id/view_right">
+
+            <Layout
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                app:layout_constraintStart_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/header_text"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+
+        </Constraint>
+
+        <Constraint android:id="@id/header_text">
+
+            <CustomAttribute
+                app:attributeName="backgroundColor"
+                app:customColorValue="@color/black"/>
+
+        </Constraint>
+
+        <Constraint android:id="@id/home_icon">
+
+            <Layout
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                app:layout_constraintStart_toEndOf="parent"
+                app:layout_constraintEnd_toStartOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginBottom="50dp"/>
+
+        </Constraint>
+
+        <Constraint android:id="@id/fav_icon">
+
+            <Layout
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginBottom="30dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+        </Constraint>
+
+        <Constraint android:id="@id/fav_label">
+
+            <Layout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/fav_icon"
+                app:layout_constraintStart_toEndOf="@+id/fav_icon"
+                app:layout_constraintEnd_toStartOf="@+id/fav_icon"/>
+
+        </Constraint>
+
+        <Constraint android:id="@id/bookmark_icon">
+
+            <Layout
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginBottom="30dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+
+        </Constraint>
+
+        <Constraint android:id="@id/bookmark_label">
+
+            <Layout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/bookmark_icon"
+                app:layout_constraintEnd_toStartOf="@+id/bookmark_icon"
+                app:layout_constraintStart_toEndOf="@+id/bookmark_icon"/>
+
+        </Constraint>
+
+        <Constraint android:id="@id/dot">
+
+            <Layout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/home_icon"
+                app:layout_constraintStart_toEndOf="parent"
+                app:layout_constraintEnd_toStartOf="parent"
+                android:alpha="0"/>
+
+        </Constraint>
+
     </ConstraintSet>
 
+
+    <!-- ................LEFT_STATE.................. -->
+
+    <ConstraintSet android:id="@+id/left_state">
+
+        <Constraint android:id="@id/center_background_view">
+
+            <Layout
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/header_text"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+
+            <CustomAttribute
+                app:attributeName="backgroundColor"
+                app:customColorValue="@color/colorPrimary"/>
+
+        </Constraint>
+
+        <Constraint android:id="@id/view_left">
+
+            <Layout
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/header_text"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+
+        </Constraint>
+
+        <Constraint android:id="@id/view_right">
+
+            <Layout
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                app:layout_constraintStart_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/header_text"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+
+        </Constraint>
+
+        <Constraint android:id="@id/header_text">
+
+            <CustomAttribute
+                app:attributeName="backgroundColor"
+                app:customColorValue="@color/colorPrimary"/>
+
+        </Constraint>
+
+        <Constraint android:id="@id/home_icon">
+
+            <Layout
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                app:layout_constraintStart_toEndOf="parent"
+                app:layout_constraintEnd_toStartOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginBottom="25dp"/>
+
+        </Constraint>
+
+        <Constraint android:id="@id/fav_icon">
+
+            <Layout
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="60dp"
+                android:layout_marginBottom="10dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+        </Constraint>
+
+        <Constraint android:id="@id/fav_label">
+
+            <Layout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:alpha="0"
+                app:layout_constraintTop_toBottomOf="@+id/fav_icon"
+                app:layout_constraintStart_toEndOf="@+id/fav_icon"
+                app:layout_constraintEnd_toStartOf="@+id/fav_icon"/>
+
+        </Constraint>
+
+        <Constraint android:id="@id/bookmark_icon">
+
+            <Layout
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginEnd="60dp"
+                android:layout_marginBottom="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+
+        </Constraint>
+
+        <Constraint android:id="@id/bookmark_label">
+
+            <Layout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:alpha="0"
+                app:layout_constraintTop_toBottomOf="@+id/bookmark_icon"
+                app:layout_constraintEnd_toStartOf="@+id/bookmark_icon"
+                app:layout_constraintStart_toEndOf="@+id/bookmark_icon"/>
+
+        </Constraint>
+
+        <Constraint android:id="@id/dot">
+
+            <Layout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/fav_icon"
+                app:layout_constraintStart_toEndOf="@+id/fav_icon"
+                app:layout_constraintEnd_toStartOf="@+id/fav_icon"
+                android:alpha="1"/>
+
+        </Constraint>
+
+    </ConstraintSet>
+
+    <!-- ................RIGHT_STATE.................. -->
+
+    <ConstraintSet android:id="@+id/right_state">
+
+        <Constraint android:id="@id/center_background_view">
+
+            <Layout
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/header_text"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+
+            <CustomAttribute
+                app:attributeName="backgroundColor"
+                app:customColorValue="@color/colorAccent"/>
+
+        </Constraint>
+
+        <Constraint android:id="@id/view_left">
+
+            <Layout
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                app:layout_constraintEnd_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/header_text"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+
+        </Constraint>
+
+        <Constraint android:id="@id/view_right">
+
+            <Layout
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/header_text"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+
+        </Constraint>
+
+        <Constraint android:id="@id/header_text">
+
+            <CustomAttribute
+                app:attributeName="backgroundColor"
+                app:customColorValue="@color/colorAccent"/>
+
+        </Constraint>
+
+        <Constraint android:id="@id/home_icon">
+
+            <Layout
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                app:layout_constraintStart_toEndOf="parent"
+                app:layout_constraintEnd_toStartOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginBottom="25dp"/>
+
+        </Constraint>
+
+        <Constraint android:id="@id/fav_icon">
+
+            <Layout
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="60dp"
+                android:layout_marginBottom="10dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+        </Constraint>
+
+        <Constraint android:id="@id/fav_label">
+
+            <Layout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:alpha="0"
+                app:layout_constraintTop_toBottomOf="@+id/fav_icon"
+                app:layout_constraintStart_toEndOf="@+id/fav_icon"
+                app:layout_constraintEnd_toStartOf="@+id/fav_icon"/>
+
+        </Constraint>
+
+        <Constraint android:id="@id/bookmark_icon">
+
+            <Layout
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginEnd="60dp"
+                android:layout_marginBottom="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+
+        </Constraint>
+
+        <Constraint android:id="@id/bookmark_label">
+
+            <Layout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:alpha="0"
+                app:layout_constraintTop_toBottomOf="@+id/bookmark_icon"
+                app:layout_constraintEnd_toStartOf="@+id/bookmark_icon"
+                app:layout_constraintStart_toEndOf="@+id/bookmark_icon"/>
+
+        </Constraint>
+
+        <Constraint android:id="@id/dot">
+
+            <Layout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/bookmark_icon"
+                app:layout_constraintStart_toEndOf="@+id/bookmark_icon"
+                app:layout_constraintEnd_toStartOf="@+id/bookmark_icon"
+                android:alpha="1"/>
+
+        </Constraint>
+
+    </ConstraintSet>
+
+    <Transition
+        android:id="@+id/right_swipe_transition"
+        app:constraintSetEnd="@id/right_state"
+        app:constraintSetStart="@id/center_state"
+        app:duration="200"
+        app:motionInterpolator="easeIn">
+        <OnSwipe
+            app:dragDirection="dragLeft"
+            app:maxAcceleration="20"
+            app:touchAnchorId="@id/view_right"
+            app:touchAnchorSide="left" />
+    </Transition>
+
+    <Transition
+        android:id="@+id/left_swipe_transition"
+        app:constraintSetEnd="@id/left_state"
+        app:constraintSetStart="@id/center_state"
+        app:duration="200"
+        app:motionInterpolator="easeIn">
+        <OnSwipe
+            app:dragDirection="dragRight"
+            app:maxAcceleration="20"
+            app:touchAnchorId="@id/view_left"
+            app:touchAnchorSide="right" />
+    </Transition>
 
 </MotionScene>
